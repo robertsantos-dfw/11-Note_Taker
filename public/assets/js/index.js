@@ -34,7 +34,7 @@ const deleteNote = (id) => {
 // A function for updating a note from the db
 const updateNote = (id) => {
     return $.ajax({
-        url: "api/note/" + id,
+        url: "api/notes/" + id,
         method: "PUT",
     });
 };

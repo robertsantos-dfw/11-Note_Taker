@@ -17,18 +17,19 @@ router.get("/notes", function(req, res) {
     res.json(db);
 });
 
-router.post("/note", function(req, res) {
-    db.push(req, body);
-    console.log(db);
-    res.json(true);
+router.post("/api/notes", function(req, res) {
+    let newNote = req.body;
+    notes.push(newNote);
+    updateDb();
+    return console.log("Added new note: " + newNote.title);
 });
 
 
-router.put("/note/:id", function(req, res) {
-    // Empty out the arrays of data
-    db.length = 0;
-    res.json({ ok: true });
+
+router.get("/api/notes/:id", function(req, res) {
+    res.json(notes[req.params.id]);
 });
+
 
 //delete route
 router.delete("/notes/:id", async function(req, res) {
