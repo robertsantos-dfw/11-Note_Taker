@@ -25,7 +25,7 @@ This application is simple, clean, easy to use and undertand. You will be able t
 
 ## Questions
 
-* GitHub Repo https://github.com/robertsantos-dfw
+* GitHub Repo https://github.com/robertsantos-dfw/11-Note_Taker
 
 * You can reach me by emailing me at robertsantos.dfw@gmail.com with any additional questions.
 
